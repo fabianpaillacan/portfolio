@@ -37,7 +37,7 @@ const SocialLink = ({ href, ariaLabel, children }) => (
 );
 
 const SocialIcons = () => (
-  <section aria-label="Redes sociales" className="fixed top-4 right-6 z-50">
+  <section aria-label="Redes sociales" className="absolute top-6 right-6 z-20">
     <div className="flex items-center gap-4 px-4 py-2 rounded-full bg-white/70 dark:bg-slate-800/80 border border-gradient-to-r from-purple-500 to-orange-500 shadow-lg backdrop-blur-md">
       <SocialLink href="https://github.com/fabianpaillacan" ariaLabel="GitHub">
         <GitHubIcon size={100} className="text-gray-700 dark:text-gray-200 hover:text-orange-500 dark:hover:text-teal-200 transition-transform duration-200 hover:scale-110" />

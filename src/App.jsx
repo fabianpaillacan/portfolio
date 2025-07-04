@@ -150,9 +150,12 @@ function App() {
     <div className="relative min-h-screen bg-gradient-to-br from-purple-600 via-orange-200 to-orange-500 dark:from-slate-900 dark:via-slate-800 dark:to-purple-900 overflow-x-hidden scroll-smooth">
       <AnimatedParticles />
       <div className="text-white font-bold">En desarrollo...</div>
-      <SocialIcons />
+      {/* SocialIcons en la esquina superior derecha del área principal, no fixed */}
+      <div className="absolute top-6 right-6 z-20">
+        <SocialIcons />
+      </div>
       <main className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
-        {/* Avatar con animación */}
+          {/* Avatar con animación */}
         <div className="mt-24 mb-8 animate-fade-in-up">
           <div className="w-40 h-40 rounded-full border-8 border-gradient-to-tr from-purple-500 via-orange-400 to-orange-600 shadow-xl overflow-hidden animate-avatar-glow">
             <img src={berserk} alt="Avatar" className="w-full h-full object-cover" />
@@ -348,11 +351,3 @@ function App() {
 
 
 export default App;
-
-/*
-Agrega animaciones en tailwind.config.js o en tu CSS:
-.animate-cloud-move { animation: cloudMove 32s linear infinite alternate; }
-.animate-cloud-move-slow { animation: cloudMove 48s linear infinite alternate; }
-.animate-cloud-move-fast { animation: cloudMove 20s linear infinite alternate; }
-@keyframes cloudMove { 0% { transform: translateX(0); } 100% { transform: translateX(40px); } }
-*/
