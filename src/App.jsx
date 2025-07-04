@@ -168,13 +168,11 @@ function App() {
         </h1>
 
         {/* Subtítulo con efecto máquina de escribir */}
-        <div className="mt-8 animate-fade-in-delay">
-          <p className="text-2xl md:text-3xl font-mono text-gray-800 dark:text-gray-200 border-r-4 border-orange-500 pr-2 inline-block animate-typewriter overflow-hidden whitespace-nowrap">
+        <div className="mt-8 animate-fade-in-delay w-full flex justify-center">
+          <p className="text-lg xs:text-xl sm:text-2xl md:text-3xl font-mono text-gray-800 dark:text-gray-200 border-r-4 border-orange-500 pr-2 inline-block animate-typewriter overflow-hidden whitespace-nowrap max-w-full text-center">
             Frontend Developer & UI Enthusiast
           </p>
         </div>
-
-        {/* Botón que hace scroll al section#sobre mi */}
         <section className="flex flex-row items-center mt-12">
         <button
           className="mt-12 p-8 py-4 bg-gradient-to-r from-purple-500 to-orange-500 text-white font-bold rounded-full shadow-lg text-xl hover:scale-105 hover:from-orange-500 hover:to-purple-500 transition-all duration-200 animate-bounce w-full block focus:shadow-none active:shadow-none disabled:opacity-50 disabled:shadow-none"
