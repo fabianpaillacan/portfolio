@@ -1,0 +1,87 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes float-delay {
+  0%, 100% { transform: translateY(10px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes text-shine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes line-grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fade-in {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+
+@keyframes gradient-x {
+  0%,100% { background-position: 0% 50%;}
+  50% { background-position: 100% 50%;}
+}
+
+@keyframes avatar-glow {
+  0%,100% { box-shadow: 0 0 32px 0 #a855f7, 0 0 0 0 #f59e42;}
+  50% { box-shadow: 0 0 64px 8px #f59e42, 0 0 32px 0 #a8d138;}
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float-delay 8s ease-in-out infinite 2s;
+}
+
+.animate-text-shine {
+  background-size: 200% auto;
+  animation: text-shine 3s linear infinite alternate;
+}
+
+.animate-typewriter {
+  animation: typewriter 2s steps(15) 1s 1 normal both;
+}
+
+.animate-line-grow {
+  animation: line-grow 1.5s ease-out 3s forwards;
+}
+
+.animate-fade-in-up { animation: fade-in-up 1s cubic-bezier(.4,0,.2,1) both; }
+
+.animate-fade-in { animation: fade-in 1.2s 0.2s both; }
+.animate-fade-in-delay { animation: fade-in 1.2s 0.8s both; }
+
+.animate-gradient-x { background-size: 200% 200%; animation: gradient-x 4s ease-in-out infinite; }
+
+.animate-avatar-glow { animation: avatar-glow 3s ease-in-out infinite; }
+
+.animate-line-grow { animation: line-grow 1.2s cubic-bezier(.4,0,.2,1) both; }
+
+.animate-cloud-move { animation: cloudMove 10s linear infinite alternate; }
+.animate-cloud-move-slow { animation: cloudMove 10s linear infinite alternate; }
+.animate-cloud-move-fast { animation: cloudMove 15s linear infinite alternate; }
+@keyframes cloudMove { 0% { transform: translateX(0); } 100% { transform: translateX(40px); } }
